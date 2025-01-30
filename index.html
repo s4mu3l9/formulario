@@ -84,30 +84,30 @@
 
     <div class="container">
         <h2>Formulario para mi Amigo/a 💖</h2>
-        <form id="mi-formulario" method="POST" action="https://formsubmit.co/jmoreyralaura@gmail.com">
+        <form id="miformulario" method="POST" action="https://formsubmit.co/jmoreyralaura@gmail.com">
             <fieldset>
                 <legend>Formulario</legend>
 
                 <label for="nombre">Nombre y Apellidos</label>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre completo" required minlength="2" maxlength="40" pattern="[A-Za-z ]+">
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required minlength="2" maxlength="40" pattern="[A-Za-z ]+">
 
                 <label for="edad">Edad</label>
                 <input type="number" id="edad" name="edad" placeholder="Tu edad" required min="19" max="19">
 
                 <label for="comida">Comida favorita</label>
-                <input type="text" id="comida" placeholder="Ej: Pizza, Sushi, Tacos" required minlength="3" maxlength="20">
+                <input type="text" id="comida" name="comida" placeholder="Ej: Pizza, Sushi, Tacos" required minlength="3" maxlength="20">
 
                 <label for="color">Color favorito</label>
-                <input type="text" id="color" placeholder="Ej: Azul, Rojo, Verde" required minlength="3" maxlength="15">
+                <input type="text" id="color" name="color" placeholder="Ej: Azul, Rojo, Verde" required minlength="3" maxlength="15">
 
                 <label for="piel">Color de piel</label>
-                <input type="text" id="piel" placeholder="Oscura o Blanca" required minlength="3" maxlength="10">
+                <input type="text" id="piel" name="piel" placeholder="Oscura o Blanca" required minlength="3" maxlength="10">
 
                 <label for="amistad">¿Qué es lo que más valoras en una amistad?</label>
-                <input type="text" id="amistad" placeholder="Explica por qué" required minlength="10" maxlength="60">
+                <input type="text" name="amistad" id="amistad" placeholder="Explica por qué" required minlength="10" maxlength="60">
 
                 <label for="poder">¿Qué poder te gustaría tener?</label>
-                <input type="text" id="poder" placeholder="Piensa bien..." list="poderes">
+                <input type="text" id="poder" name="poder" placeholder="Piensa bien..." list="poderes">
                 <datalist id="poderes">
                     <option value="Volar">
                     <option value="Superfuerza">
