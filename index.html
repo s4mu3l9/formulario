@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Bonito</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff4b5c;
+            margin-bottom: 15px;
+        }
+
+        fieldset {
+            border: 2px solid #ff4b5c;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff4b5c;
+            padding: 5px 10px;
+            background: #ffe2e6;
+            border-radius: 5px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            background: #ff4b5c;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #d63a4a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formulario para mi Amigo/a 💖</h2>
+        <form id="mi-formulario" method="get">
+            <fieldset>
+                <legend>Formulario</legend>
+
+                <label for="nombre">Nombre y Apellidos</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre completo" required minlength="2" maxlength="40" pattern="[A-Za-z ]+">
+
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" placeholder="Tu edad" required min="19" max="19">
+
+                <label for="comida">Comida favorita</label>
+                <input type="text" id="comida" placeholder="Ej: Pizza, Sushi, Tacos" required minlength="3" maxlength="20">
+
+                <label for="color">Color favorito</label>
+                <input type="text" id="color" placeholder="Ej: Azul, Rojo, Verde" required minlength="3" maxlength="15">
+
+                <label for="piel">Color de piel</label>
+                <input type="text" id="piel" placeholder="Oscura o Blanca" required minlength="3" maxlength="10">
+
+                <label for="amistad">¿Qué es lo que más valoras en una amistad?</label>
+                <input type="text" id="amistad" placeholder="Explica por qué" required minlength="10" maxlength="60">
+
+                <label for="poder">¿Qué poder te gustaría tener?</label>
+                <input type="text" id="poder" placeholder="Piensa bien..." list="poderes">
+                <datalist id="poderes">
+                    <option value="Volar">
+                    <option value="Superfuerza">
+                    <option value="Velocidad (Flash)">
+                    <option value="Telequinesis">
+                    <option value="Teletransportación">
+                </datalist>
+
+                <button type="submit">Enviar 💌</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
